@@ -1,3 +1,22 @@
+# ICRA supplements
+
+## Training details
+
+Both the policy and the value function are 4-layer fully-connected neural networks with 64 hidden units at each layer and hyperbolic tangent non-linearities. We use a learning rate of 3 * 10^-4, a training batch size of 25600, minibatch size of 5120, 10 SGD iterations, and train for 800 iterations over a horizon of 1000 steps.
+We set the discount factor to gamma=0.99 and the GAE value to lambda=0.9. Other PPO parameters are left to their default values. We ran grid searches over several hyper-parameters, each on 1 CPU, and training for the parameters mentioned above converged in about 12 hours on a single CPU.
+
+In our simulator, we use a time-step of 0.1s; this is the time-step real world is standardized to. For each rollout,  we sample random 1000 step (100s) long portions of I24 trajectories and use that to simulate the leading vehicle. Behind it we place an AV, followed by 5 cars following an IDM model. Further details on the simulator update procedure and the car following model can be found in the code. 
+
+## Energy model
+
+We have removed the energy model we used during training from this repository as it has not been publicly released yet. 
+
+## Dataset
+
+The whole dataset that we release can be found at: https://vanderbilt.app.box.com/s/z3nignz1cgm16dy56r1mqg9ycds40tkz
+
+The pruned trained dataset that we used can be found in `dataset/icra`. 
+
 # Trajectory Training
 
 ## Installation
