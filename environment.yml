@@ -1,0 +1,21 @@
+name: trajectory
+channels:
+  - defaults
+dependencies:
+  - pip=21.1.2
+  - python=3.8.10
+  - pip:
+    - cloudpickle==1.6.0
+    - gym==0.18.3
+    - matplotlib==3.4.2
+    - numpy==1.20.3
+    - pandas==1.2.4
+    - pygame==2.0.1
+    - stable-baselines3==1.0
+    - tensorboard==2.5.0
+    - torch==1.8.1
+    - tqdm==4.60.0
+    - onnx==1.9.0
+    - onnx_tf==1.8.0
+    - tensorflow==2.5.0
+    - boto3
