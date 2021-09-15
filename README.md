@@ -15,7 +15,7 @@ We have removed the energy model we used during training from this repository as
 
 The whole dataset that we release can be found at: https://vanderbilt.app.box.com/s/z3nignz1cgm16dy56r1mqg9ycds40tkz
 
-The pruned trained dataset that we used can be found in `dataset/icra`. 
+The pruned trained dataset that we used can be found in `dataset/icra_final`. 
 
 # Trajectory Training
 
