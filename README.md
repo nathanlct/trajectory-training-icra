@@ -17,6 +17,8 @@ The whole dataset that we release can be found at: https://vanderbilt.app.box.co
 
 The pruned trained dataset that we used can be found in `dataset/icra_final`. 
 
+If you use the trajectory dataset in your published works please cite from this DOI: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6366761.svg)](https://doi.org/10.5281/zenodo.6366761)
+
 # Trajectory Training
 
 ## Installation
